@@ -5,10 +5,10 @@
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
-/[Bb]uild/
-/[Bb]uilds/
 /[Ll]ogs/
 /[Mm]emoryCaptures/
+/[Vv]env/
+/[Tt]rainerConfig/results
 
 # Never ignore Asset meta data
 !/[Aa]ssets/**/*.meta
