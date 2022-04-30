@@ -1,0 +1,29 @@
+behaviors:
+  DeciderAgent:
+    trainer_type: sac
+    max_steps: 5.0e7
+    time_horizon: 64
+    summary_freq: 2000
+
+    hyperparameters:
+      batch_size: 128
+      buffer_size: 2048
+      learning_rate: 0.0003
+      learning_rate_schedule: linear    
+
+
+    network_settings:
+      vis_encode_type: simple
+      num_layers: 2
+      normalize: false
+      hidden_units: 256
+      memory:
+        sequence_length: 64
+        memory_size: 128
+
+    reward_signals:
+      extrinsic:
+        strength: 1.0
+        gamma: 0.99
+
+
